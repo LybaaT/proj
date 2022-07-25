@@ -1,6 +1,6 @@
 @font-face {
     font-family: "regular";
-    src: url("reg.ttf")}
+    src: url("fonts/reg.ttf")}
 body {
     margin: 0;
     padding: 0;
@@ -28,9 +28,11 @@ body {
 .nav-item .nav-link {
     margin-left: 20px;
     text-align: center;
-    transition: 0.5s ease-in-out;
+    display: inline-block;
+    transition: 0.5s color ease-in-out, 0.2s border-bottom linear;
+    border-bottom: 1px solid transparent;
 }
-.nav-item:hover {
+.nav-item:hover .nav-link {
     border-bottom: 1px black solid;
 }
 .nav.item {
@@ -38,9 +40,26 @@ body {
     transition: 0.2s ease-in-out;
 }
 
-.card{
+.card {
     color:#383431 ;
     background-color: #FFFFFF;
+    margin: 50px;
+}
+.card-title {
+    font-size: 20px !important;
+}
+.card-text {
+    font-size: 40px !important;
+}
+.suitcase-background {
+    background-image: url(images/suitcase.jpeg);
+}
+.purse-background {
+    background-image: url(images/purse.jpg);
+}
+.bag-background {
+    background-image: url(images/bag.jpg);
+    background-size: 100%;
 }
 
 h5{
@@ -197,4 +216,31 @@ b, strong {
     display: inline-block;
     font-family: Arial, Helvetica, sans-serif;
 
+}
+.carousel-caption p {
+    font-size: 8vw !important;
+}
+
+.tagline {
+    font-size: clamp(30px, 8vw, 100px);
+    text-align: center;
+    margin: 50px;
+}
+
+.icon-container {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+} 
+
+.dummy-icon {
+    cursor: pointer;
+    transition: opacity 0.1s linear, transform 0.1s ease-out;
+    margin-left: 8px;
+    width: 30px !important;
+}
+
+.dummy-icon:hover {
+    opacity: 0.5;
+    transform: scale(1.1);
 }

@@ -1,577 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-    <link rel="stylesheet" href="main.css">
-=======
->>>>>>> parent of 735ce56 (created external css and js files for index)
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <title>Bronx Luggage test</title>
-    <style>
-        @font-face {
-            font-family: "regular";
-            src: url("reg.ttf")}
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: "regular";
-            height: 100%;
-            background-color: #fff;
-        }
-        *::-webkit-scrollbar {
-            width: 9px;
-        }
-        *::-webkit-scrollbar-track {
-            background: #e6e6e6;
-        }
-        *::-webkit-scrollbar-thumb {
-            background-color: #212121;
-            border-radius: 10px;
-            border: 1px solid #212121;
-        }
-        .nav {
-            background-color: white;
-        }
-        .navbar-brand {
-            font-size: 48px;
-        }
-        .nav-item .nav-link {
-            margin-left: 20px;
-        }
-        .nav.item {
-            font-size: 30px;
-            transition: 0.2s ease-in-out;
-        }
-
-        .card{
-            color:#383431 ;
-            background-color: #FFFFFF;
-        }
-
-        h5{
-            font-size: calc(14px + (18 - 14) * ((100vw - 360px) / (1600 - 360))) !important; 
-        }
-
-        button {
-            font-size: calc(13px + (16 - 13) * ((100vw - 360px) / (1600 - 320))) !important;
-            border-radius:0;
-            padding-left:  calc(20px + (28 - 20) * ((100vw - 360px) / (1600 - 360))) !important; 
-            padding-right: calc(20px + (28 - 20) * ((100vw - 360px) / (1600 - 360))) !important; 
-            padding-top:  calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important; 
-            padding-bottom:   calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important;
-            background-color:#383431; 
-            border:none 
-        }
-
-        button:focus {
-            -moz-box-shadow: none;
-            -webkit-box-shadow: none;
-            box-shadow: none;
-            outline-width: 0;
-        }
-
-        li{
-            margin-top: 8px ;
-            margin-bottom: 8px ;
-            cursor: pointer;
-        }
-
-        input::placeholder {
-            vertical-align:middle;
-            text-align: center;
-            color:#42443E;
-            font-size: calc(12px + (14 - 12) * ((100vw - 360px) / (1600 - 360))) !important; 
-        }
-
-        input{
-            border-radius:2px;
-            background: #fff;
-            color: #42443E;
-            border-color: #42443E ;
-
-        }
-
-        input:focus {
-            -moz-box-shadow: none;
-            -webkit-box-shadow: none;
-            box-shadow: none;
-            outline-width: 0;
-        }
-
-        img{
-            vertical-align: middle;
-            width: 100%;
-            width: calc(30px + 6 * ((100vw - 320px) / 680)) !important;  
-        }
-
-        .row-2 li:first-child {
-            font-size:  18px;
-            font-weight: bold;
-            margin-bottom: 20px;    
-            text-transform: uppercase;
-        }
-
-        footer{
-            overflow-x: hidden;
-            background-color: black;
-            color: white;
-        } 
-        small{
-            font-size: calc(12px + (14 - 12) * ((100vw - 360px) / (1600 - 360))) !important; 
-        }
-        p{
-            font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important; 
-        }
-        .social{
-            position: relative;
-            left: -10px;
-        }
-        .figure {
-            background-color: rgb(22, 19, 19);
-        }
-        .btn{
-            background-color:WHITE;
-        }
-        a{
-            text-decoration: none;
-        }
-        .line{
-            background-color:rgb(165, 164, 164);
-            width: 92%;
-        }
-
-        a span{
-            font-size: calc(14px + (13 - 14) * ((100vw - 360px) / (1600 - 360))) !important;
-        }
-
-        .third-row{
-            background-color:white;
-            border-radius:50px;
-            padding: 0.8vh 2.7vh 0.8vh 2.7vh ;  
-        }
-
-        .third-row li{
-            justify-content: space-between ;
-            border-radius:50px;
-            font-size: calc(9px + (12 - 9) * ((100vw - 360px) / (1600 - 360))) !important; 
-            
-        }
-        li.active-1{
-            padding: 1.7vh;
-
-        }
-        .cap {
-            font-size: 15px;
-            letter-spacing: 3px;
-            font-family: "regular";
-            color: white;
-        }
-        .figure-caption {
-            color: white;
-            font-size: 15px;
-            letter-spacing: 3px;
-        }
-        b, strong {
-            font-weight: bolder;
-            color: white;
-        }
-        .row-2 li:first-child {
-            font-size: 15px !important;
-            letter-spacing: 3px;
-            font-family: "regular";
-            color: #7f9186;
-            text-transform: uppercase;
-        }
-        .row-2 li {
-            font-size: 20px;
-            transition: 0.2s ease-in-out;
-        }
-        .row-2 li:hover {
-            color: #7f9186;
-        }
-        .feedback {
-            width: 94%;
-            font-family: "regular";
-        }
-        .feedback h5 {
-            color: white;
-            font-size: 15px;
-            text-transform: uppercase;
-        }
-        .form-group {
-            display: inline-block;
-            font-family: Arial, Helvetica, sans-serif;
-
-        }
-        @media (max-width: 767px) {
-            .carousel-inner .carousel-item > div {
-                display: none;
-            }
-            .carousel-inner .carousel-item > div:first-child {
-                display: block;
-            }
-        }
-
-        .carousel-inner .carousel-item.active,
-        .carousel-inner .carousel-item-next,
-        .carousel-inner .carousel-item-prev {
-            display: flex;
-        }
-
-        /* medium and up screens */
-        @media (min-width: 768px) {
-            
-            .carousel-inner .carousel-item-end.active,
-            .carousel-inner .carousel-item-next {
-            transform: translateX(25%);
-            }
-            
-            .carousel-inner .carousel-item-start.active, 
-            .carousel-inner .carousel-item-prev {
-            transform: translateX(-25%);
-            }
-        }
-
-        .carousel-inner .carousel-item-end,
-        .carousel-inner .carousel-item-start { 
-        transform: translateX(0);
-        }
-
-
-</style>
-</head>
-<body>
-    <!-- navbar -->
-    <div class="container-fluid">
-        <nav class="navbar navbar-light justify-content-center navi">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <title>Bronx Luggage test</title>
+        <link rel="stylesheet" href="main.css"></link>
+    </head>
+    <body>
+        <!-- navbar -->
+        <div class="container-fluid">
+            <nav class="navbar navbar-light justify-content-center navi">
             <a class="navbar-brand" href="index.html">BRONX LUGGAGE</a>
-          </nav class="navbar-nav">
-          <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="new.html">NEW</a>
-                  </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          FEATURED BRANDS
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <h6 class="dropdown-header">LUXURY</h6>
-                            <li><a class="dropdown-item" href="#">Rimowa</a></li>
-                            <li><a class="dropdown-item" href="#">Globe-Trotter</a></li>
-                            <li><a class="dropdown-item" href="#">MontBlanc</a></li>
-                            <li><a class="dropdown-item" href="#">Mulberry</a></li>
-                        <h6 class="dropdown-header">AMENITY</h6>
-                            <li><a class="dropdown-item" href="#">Hartmann</a></li>
-                            <li><a class="dropdown-item" href="#">Open Story</a></li>
-                            <li><a class="dropdown-item" href="#">Thule</a></li>
-                            <li><a class="dropdown-item" href="#">Away</a></li>
+            </nav class="navbar-nav">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="new.html">NEW</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                FEATURED BRANDS
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <h6 class="dropdown-header">LUXURY</h6>
+                                    <li><a class="dropdown-item" href="#">Rimowa</a></li>
+                                    <li><a class="dropdown-item" href="#">Globe-Trotter</a></li>
+                                    <li><a class="dropdown-item" href="#">MontBlanc</a></li>
+                                    <li><a class="dropdown-item" href="#">Mulberry</a></li>
+                                    <h6 class="dropdown-header">AMENITY</h6>
+                                    <li><a class="dropdown-item" href="#">Hartmann</a></li>
+                                    <li><a class="dropdown-item" href="#">Open Story</a></li>
+                                    <li><a class="dropdown-item" href="#">Thule</a></li>
+                                    <li><a class="dropdown-item" href="#">Away</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                LUGGAGE
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Hard-sided </a></li>
+                                    <li><a class="dropdown-item" href="#">Soft-sided</a></li>
+                                    <li><a class="dropdown-item" href="#">Rolling spinner</a></li>
+                                    <li><a class="dropdown-item" href="#">Duffel bags</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ACCESSORIES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">EVERYDAY</a>
+                            </li>
                         </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          LUGGAGE
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#">Hard-sided </a></li>
-                          <li><a class="dropdown-item" href="#">Soft-sided</a></li>
-                          <li><a class="dropdown-item" href="#">Rolling spinner</a></li>
-                          <li><a class="dropdown-item" href="#">Duffel bags</a></li>
-                        </ul>
-                    </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">ACCESSORIES</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">EVERYDAY</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </div>
-
-    <!--main carousel-->
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="suitcase.jpeg" class="d-block w-100" >
-          </div>
-          <div class="carousel-item">
-            <img src="purse.jpg" class="d-block w-100">
-          </div>
-          <div class="carousel-item">
-            <img src="bag.jpg" class="d-block w-100">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-  
-
-<<<<<<< HEAD
-    <!-- card catalogue-->
-    <div class="card-group">
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-      </div>    
-    <div class="container-fluid" style="height: 600px"></div>
-
-
-
-=======
-    <!--moving card catalogue-->
-    <div class="container text-center my-3">
-        <h2 class="font-weight-light">Bootstrap Multi Slide Carousel</h2>
-        <div class="row mx-auto my-auto justify-content-center">
-            <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item active">
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-img">
-                                    <img src="//via.placeholder.com/500x400/31f?text=1" class="img-fluid">
-                                </div>
-                                <div class="card-img-overlay">Slide 1</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-img">
-                                    <img src="//via.placeholder.com/500x400/e66?text=2" class="img-fluid">
-                                </div>
-                                <div class="card-img-overlay">Slide 2</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-img">
-                                    <img src="//via.placeholder.com/500x400/7d2?text=3" class="img-fluid">
-                                </div>
-                                <div class="card-img-overlay">Slide 3</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-img">
-                                    <img src="//via.placeholder.com/500x400?text=4" class="img-fluid">
-                                </div>
-                                <div class="card-img-overlay">Slide 4</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-img">
-                                    <img src="//via.placeholder.com/500x400/aba?text=5" class="img-fluid">
-                                </div>
-                                <div class="card-img-overlay">Slide 5</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-img">
-                                    <img src="//via.placeholder.com/500x400/fc0?text=6" class="img-fluid">
-                                </div>
-                                <div class="card-img-overlay">Slide 6</div>
-                            </div>
-                        </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </a>
-                <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </a>
+            </nav>
+        </div>
+        <div class="icon-container">
+            <img class="dummy-icon" src="images/heart.png">
+            <img class="dummy-icon" src="images/search-interface-symbol.png">
+            <img class="dummy-icon" src="images/shopping-bag.png">
+        </div>
+        <!--main carousel-->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/suitcase.jpeg" class="d-block w-100" >
+                    <div class="carousel-caption">
+                        <p>New Originals</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/purse.jpg" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <p>Essential Every Day</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/bag.jpg" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <p>Travel In Comfort</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- tag line-->
+        <h1 class="tagline"><u>Yes</u>, we have something for everyone.</h1>
+        <!-- card catalogue-->
+        <div class="card-group">
+            <div class="card text-center">
+                <div class="card-body suitcase-background">
+                    <h5 class="card-title">ORIGINAL</h5>
+                    <p class="card-text">An updated Titanium</p>
+                    <div class="container-fluid" style="height:400px;">
+
+                    </div>
+                </div>
+            </div>
+            <div class="card text-center">
+                <div class="card-body purse-background">
+                    <h5 class="card-title">TRAVEL ACCESSORIES</h5>
+                    <p class="card-text">The art of packing</p>
+                    <div class="container-fluid" style="height:400px;">
+
+                    </div>
+                </div>
             </div>
         </div>
-        <h5 class="mt-2 fw-light">advances one slide at a time</h5>
-    </div>
-    
->>>>>>> parent of 735ce56 (created external css and js files for index)
-    <!-- footer -->
-    <div class="container-fluid justify-content-center p-0 mx-0">
+        <div class="container-fluid" style="height:50px"></div>
+        <div class="card-group">
+            <div class="card text-center">
+                <div class="card-body bag-background">
+                    <h5 class="card-title">WHEREEVER, WHENEVER</h5>
+                    <p class="card-text">The art of packing</p>
+                    <div class="container-fluid" style="height:400px;">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" style="height:50px"></div>
+        <!-- footer -->
+        <div class="container-fluid justify-content-center p-0 mx-0">
         <footer>
             <div class="row pt-5 justify-content-md-around justify-content-center text-center figure">
                 <div class="col-auto">
                     <figure class="figure">
-                        <img class="figure-img img-fluid" src="customer support.png">
+                        <img class="figure-img img-fluid" src="images/customer support.png">
                         <figcaption class="figure-caption">CUSTOMER SUPPORT</figcaption>
                         <p class="cap"><br>A DEDICATED NETWORK OF EXPERTS AT YOUR SERVICE</p>
                     </figure>
                 </div>
                 <div class="col-auto">
                     <figure class="figure">
-                        <img class="figure-img img-fluid" src="quality.png">
+                        <img class="figure-img img-fluid" src="images/quality.png">
                         <figcaption class="figure-caption">QUALITY TESTED</figcaption>
                         <p class="cap"><br>EACH SUITCASE IS INDIVIDUALLY INSPECTED</p>
                     </figure>
                 </div>
                 <div class="col-auto">
                     <figure class="figure">
-                        <img class="figure-img img-fluid" src="return.png">
+                        <img class="figure-img img-fluid" src="images/return.png">
                         <figcaption class="figure-caption">RETURN POLICY</figcaption>
                         <p class="cap"><br>FREE RETURN POLICY WITHIN 2 WEEKS</p>
                     </figure>
                 </div>
             </div>
-
             <div class="row  mb-0 mt-5 mx-4 row-2 justify-content-xl-around justify-content-sm-between menu">
-                <div class="col-md-2">
-                    <ul class="list-unstyled">
-                        <li>BRONX LUGGAGE</li>
-                        <li>Who We Are</li>
-                        <li>Contact</li>
-                        <li>Catalogue</li>
-                    </ul>
-                </div>
-                <div class="col-md-2">
-                    <ul class="list-unstyled">
-                        <li>PRODUCTS</li>
-                        <li>Accessories</li>
-                        <li>Luggages</li>
-                        <li>Backpacks</li>
-                        <li>Purses</li>
-                        <li>Essentials</li>
-                    </ul>
-                </div>
-                <div class="col-md-2">
-                    <ul class="list-unstyled">
-                        <li>COLLECTION</li>
-                        <li>Men</li>
-                        <li>Women</li>
-                        <li>Heavy Travelers</li>
-                        <li>Classic</li>
-                    </ul>
-                </div>
-                <div class="col-md-2">
-                    <ul class="list-unstyled">
-                        <li>BRANDS</li>
-                        <li>Rimowa</li>
-                        <li>Globe-trotter</li>
-                        <li>Hartmann</li>
-                        <li>Away</li>
-                        <li>Mulberry</li>
-                        <li>Montblack</li>
-                        <li>Open Story</li>
-                        <li>Thule</li>
-                    </ul>
-                </div>  
-
+            <div class="col-md-2">
+                <ul class="list-unstyled">
+                    <li>BRONX LUGGAGE</li>
+                    <li>Who We Are</li>
+                    <li>Contact</li>
+                    <li>Catalogue</li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <ul class="list-unstyled">
+                    <li>PRODUCTS</li>
+                    <li>Accessories</li>
+                    <li>Luggages</li>
+                    <li>Backpacks</li>
+                    <li>Purses</li>
+                    <li>Essentials</li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <ul class="list-unstyled">
+                    <li>COLLECTION</li>
+                    <li>Men</li>
+                    <li>Women</li>
+                    <li>Heavy Travelers</li>
+                    <li>Classic</li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <ul class="list-unstyled">
+                    <li>BRANDS</li>
+                    <li>Rimowa</li>
+                    <li>Globe-trotter</li>
+                    <li>Hartmann</li>
+                    <li>Away</li>
+                    <li>Mulberry</li>
+                    <li>Montblack</li>
+                    <li>Open Story</li>
+                    <li>Thule</li>
+                </ul>
+            </div>
             <hr class="line">
-
             <div class="row  mb-0 mt-5 mx-4 row-2 feedback">
-            <div class="col-md-6">
-                <h5>come talk to us</h5>
-                <form>
-                    <div class="form-group">
-                      <label for="input">Enter Your Email Address</label>
-                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                    </div><br>
-                    <div class="form-group">
-                      <label for="feedback" >Write to us</label>
-                      <textarea class="form-control" id="textarea" rows="5"></textarea><br>
-                      <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                <div class="col-md-6">
+                    <h5>come talk to us</h5>
+                    <form>
+                        <div class="form-group">
+                            <label for="input">Enter Your Email Address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="feedback" >Write to us</label>
+                            <textarea class="form-control" id="textarea" rows="5"></textarea><br>
+                            <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h5>We're not far from you!</h5>
+                </div>
+                <hr class="line">
+                <div class="row  mb-0 mt-5 mx-4 row-2 feedback">
+                </div>
+                <hr class="line">
+                <div class="row text-center py-3">
+                    <div class="col">
+                        <p class="text-muted"><b>ALL RIGHTS ARE RESERVED</b></p>
                     </div>
-                </form>
-            </div>
-            <div class="col-md-6">
-                <h5>We're not far from you!</h5>
-            </div>            
-
-            <hr class="line">
-
-            <div class="row  mb-0 mt-5 mx-4 row-2 feedback">
-            </div>
-
-            <hr class="line">
-            <div class="row text-center py-3"><div class="col"><p class="text-muted"><b>ALL RIGHTS ARE RESERVED</b></p></div></div>
+                </div>
         </footer>
-    </div>
-
-<<<<<<< HEAD
-    <script src="main.js"></script>
-=======
-
-    <script>
-        $(document).ready(function(){
-            $('.third-row  li.active-1').find('span').css('color' , 'white');
-            $(' .third-row li').click(function() {
-            $(' .third-row li.active-1').find('span').css('color' , 'black');
-            $(' .third-row li.active-1').removeClass('active-1');
-            $(' .third-row li.active-1').addClass('text-dark');
-            $(this).addClass('active-1');
-            $(' .third-row  li.active-1').find('span').css('color' , 'white');
-            });
-        });
-        
-        let items = document.querySelectorAll('.carousel .carousel-item')
-
-        items.forEach((el) => {
-            const minPerSlide = 4
-            let next = el.nextElementSibling
-            for (var i=1; i<minPerSlide; i++) {
-                if (!next) {
-                    // wrap carousel by using first child
-                    next = items[0]
-                }
-                let cloneChild = next.cloneNode(true)
-                el.appendChild(cloneChild.children[0])
-                next = next.nextElementSibling
-            }
-        })
-
-    </script>
->>>>>>> parent of 735ce56 (created external css and js files for index)
-</body>
+        </div>
+        <script>
+            // $(document).ready(function(){
+            //     $('.third-row  li.active-1').find('span').css('color' , 'white');
+            //     $(' .third-row li').click(function() {
+            //     $(' .third-row li.active-1').find('span').css('color' , 'black');
+            //     $(' .third-row li.active-1').removeClass('active-1');
+            //     $(' .third-row li.active-1').addClass('text-dark');
+            //     $(this).addClass('active-1');
+            //     $(' .third-row  li.active-1').find('span').css('color' , 'white');
+            //     });
+            // });
+            
+            // let items = document.querySelectorAll('.carousel .carousel-item')
+            
+            // items.forEach((el) => {
+            //     const minPerSlide = 4
+            //     let next = el.nextElementSibling
+            //     for (var i=1; i<minPerSlide; i++) {
+            //         if (!next) {
+            //             // wrap carousel by using first child
+            //             next = items[0]
+            //         }
+            //         let cloneChild = next.cloneNode(true)
+            //         el.appendChild(cloneChild.children[0])
+            //         next = next.nextElementSibling
+            //     }
+            // })
+            
+        </script>
+    </body>
 </html>
