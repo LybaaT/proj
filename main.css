@@ -129,12 +129,6 @@ footer{
     overflow-x: hidden;
     background-color: black;
     color: white;
-} 
-small{
-    font-size: calc(12px + (14 - 12) * ((100vw - 360px) / (1600 - 360))) !important; 
-}
-p{
-    font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important; 
 }
 .social{
     position: relative;
@@ -144,7 +138,8 @@ p{
     background-color: rgb(22, 19, 19);
 }
 .btn{
-    background-color:WHITE;
+    background-color: white;
+    color: #333;
 }
 a{
     text-decoration: none;
@@ -152,10 +147,6 @@ a{
 .line{
     background-color:rgb(165, 164, 164);
     width: 92%;
-}
-
-a span{
-    font-size: calc(14px + (13 - 14) * ((100vw - 360px) / (1600 - 360))) !important;
 }
 
 .third-row{
@@ -243,4 +234,20 @@ b, strong {
 .dummy-icon:hover {
     opacity: 0.5;
     transform: scale(1.1);
+}
+
+.contact-info {
+    color: #ff0062;
+}
+.discover-button {
+    margin: 25px auto;
+    display: block;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 30px !important;
+    transition: color 0.2s ease-out, background-color 0.2s linear;
+}
+.discover-button:hover {
+    background-color: black;
+    color: white;
 }
