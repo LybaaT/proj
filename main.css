@@ -193,8 +193,11 @@ b, strong {
     font-family: Arial, Helvetica, sans-serif;
 
 }
+.card {
+    height: 100px;
+}
 .card-img {
-    width: 50px;
+    width: 200px;
 }
 @media (max-width: 767px) {
     .carousel-inner .carousel-item > div {
