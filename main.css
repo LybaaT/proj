@@ -96,7 +96,6 @@ input::placeholder {
     color:#42443E;
     font-size: calc(12px + (14 - 12) * ((100vw - 360px) / (1600 - 360))) !important; 
 }
-
 input{
     border-radius:2px;
     background: #fff;
@@ -104,14 +103,15 @@ input{
     border-color: #42443E ;
 
 }
-
 input:focus {
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none;
     outline-width: 0;
 }
-
+.form-group {
+    width:100%;
+}
 img{
     vertical-align: middle;
     width: 100%;
