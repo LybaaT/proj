@@ -291,12 +291,20 @@ b, strong {
 @media (min-width: 600px) {
 
     .tote-background {
-      background-size: 100% auto;
-    }
-    .clutch-background{
         background-size: 100% auto;
-    }
-    .redbag-background {
+      }
+      .clutch-background{
+          background-size: 100% auto;
+      }
+      .redbag-background {
+          background-size: 100% auto;
+      }.suitcase-background {
         background-size: 100% auto;
-    }
+      }
+      .purse-background{
+          background-size: 100% auto;
+      }
+      .redbag-background {
+          background-size: 100% auto;
+      }
  }
