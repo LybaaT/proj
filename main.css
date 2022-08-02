@@ -59,6 +59,7 @@ body {
 .friends-background {
     background-image: url(images/friends.jpg);
     background-size: cover;
+    background-position-x: center;
 }
 .redbag-background {
     background: url(images/redbag.jpg);
@@ -285,4 +286,17 @@ b, strong {
 .dropdown:hover .dropdown-menu {
     display: block;
     margin-top: 0;
+}
+ 
+@media (min-width: 600px) {
+
+    .tote-background {
+      background-size: 100% auto;
+    }
+    .clutch-background{
+        background-size: 100% auto;
+    }
+    .redbag-background {
+        background-size: 100% auto;
+    }
  }
