@@ -1,6 +1,6 @@
 @font-face {
     font-family: "regular";
-    src: url("reg.ttf")}
+    src: url("fonts/reg.ttf")}
 body {
     margin: 0;
     padding: 0;
@@ -28,9 +28,11 @@ body {
 .nav-item .nav-link {
     margin-left: 20px;
     text-align: center;
-    transition: 0.5s ease-in-out;
+    display: inline-block;
+    transition: 0.5s color ease-in-out, 0.2s border-bottom linear;
+    border-bottom: 1px solid transparent;
 }
-.nav-item:hover {
+.nav-item:hover .nav-link {
     border-bottom: 1px black solid;
 }
 .nav.item {
@@ -38,31 +40,65 @@ body {
     transition: 0.2s ease-in-out;
 }
 
-.card{
+.card {
     color:#383431 ;
     background-color: #FFFFFF;
+    margin: 50px;
+}
+.card-title {
+    font-size: 20px !important;
+}
+.card-text {
+    font-size: 40px !important;
+}
+.suitcase-background {
+    background-image: url(images/suitcase.jpeg);
+}
+.friends-background {
+    background-image: url(images/friends.jpg);
+    background-size: cover;
+    width: 100%;
+}
+.redbag-background {
+    background: url(images/redbag.jpg);
+    background-size: cover;
+}
+.clutch-background {
+    background-image: url(images/clutch.jpg);
+    background-size: 100%;
+}
+.bag-background {
+    background-image: url(images/bag.jpg);
+    background-size: 100%;
+}
+.hand-background {
+    background-image: url(images/hand.jpg);
+    background-size: 100%;
+}
+.tote-background {
+    background-image: url(images/tote.jpg);
+    background-size: 100%;
 }
 
 h5{
     font-size: calc(14px + (18 - 14) * ((100vw - 360px) / (1600 - 360))) !important; 
 }
 
-button {
+.submit {
     font-size: calc(13px + (16 - 13) * ((100vw - 360px) / (1600 - 320))) !important;
     border-radius:0;
     padding-left:  calc(20px + (28 - 20) * ((100vw - 360px) / (1600 - 360))) !important; 
     padding-right: calc(20px + (28 - 20) * ((100vw - 360px) / (1600 - 360))) !important; 
     padding-top:  calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important; 
     padding-bottom:   calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important;
-    background-color:#383431; 
-    border:none 
+    background-color: white;
+    border: 1px solid black;
+    transition: color 0.2s ease-out, background-color 0.2s linear;
 }
 
-button:focus {
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    outline-width: 0;
+.submit:hover {
+    background-color: black;
+    color: white;
 }
 
 li{
@@ -83,7 +119,7 @@ input{
     background: #fff;
     color: #42443E;
     border-color: #42443E ;
-
+    padding: 100%;
 }
 
 input:focus {
@@ -92,7 +128,9 @@ input:focus {
     box-shadow: none;
     outline-width: 0;
 }
-
+.form-group {
+    width:100%;
+}
 img{
     vertical-align: middle;
     width: 100%;
@@ -110,12 +148,6 @@ footer{
     overflow-x: hidden;
     background-color: black;
     color: white;
-} 
-small{
-    font-size: calc(12px + (14 - 12) * ((100vw - 360px) / (1600 - 360))) !important; 
-}
-p{
-    font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important; 
 }
 .social{
     position: relative;
@@ -125,7 +157,8 @@ p{
     background-color: rgb(22, 19, 19);
 }
 .btn{
-    background-color:WHITE;
+    background-color: white;
+    color: #333;
 }
 a{
     text-decoration: none;
@@ -133,10 +166,6 @@ a{
 .line{
     background-color:rgb(165, 164, 164);
     width: 92%;
-}
-
-a span{
-    font-size: calc(14px + (13 - 14) * ((100vw - 360px) / (1600 - 360))) !important;
 }
 
 .third-row{
@@ -198,3 +227,52 @@ b, strong {
     font-family: Arial, Helvetica, sans-serif;
 
 }
+.carousel-caption .p a{
+    font-size: 7vw !important;
+    color: white;
+}
+
+.tagline {
+    font-size: clamp(30px, 8vw, 100px);
+    text-align: center;
+    margin: 50px;
+}
+
+.icon-container {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+} 
+
+.dummy-icon {
+    cursor: pointer;
+    transition: opacity 0.1s linear, transform 0.1s ease-out;
+    margin: 8px;
+    width: 30px !important;
+}
+
+.dummy-icon:hover {
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+
+.contact-info {
+    color: white;
+    font-size: 25px;
+}
+.discover-button {
+    margin: 25px auto;
+    display: block;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 30px !important;
+    transition: color 0.2s ease-out, background-color 0.2s linear;
+}
+.discover-button:hover {
+    background-color: black;
+    color: white;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+ }
