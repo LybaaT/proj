@@ -53,31 +53,41 @@ body {
 }
 .suitcase-background {
     background-image: url(images/suitcase.jpeg);
+    background-size: auto 100%;
+    background-position: center;
 }
 .friends-background {
     background-image: url(images/friends.jpg);
     background-size: cover;
-    width: 100%;
 }
 .redbag-background {
     background: url(images/redbag.jpg);
-    background-size: cover;
+    background-size: auto 100%;
+    background-position: center;
 }
 .clutch-background {
     background-image: url(images/clutch.jpg);
-    background-size: 100%;
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .bag-background {
     background-image: url(images/bag.jpg);
-    background-size: 100%;
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .hand-background {
     background-image: url(images/hand.jpg);
-    background-size: 100%;
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .tote-background {
     background-image: url(images/tote.jpg);
-    background-size: 100%;
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 h5{
