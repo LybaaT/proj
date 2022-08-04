@@ -53,42 +53,30 @@ body {
 }
 .suitcase-background {
     background-image: url(images/suitcase.jpeg);
-    background-size: auto 100%;
-    background-position: center;
 }
-.friends-background {
-    background-image: url(images/friends.jpg);
-    background-size: cover;
-    background-position-x: center;
+.friends{
+margin-top: 10%;
+
 }
 .redbag-background {
     background: url(images/redbag.jpg);
-    background-size: auto 100%;
-    background-position: center;
+    background-size: cover;
 }
 .clutch-background {
     background-image: url(images/clutch.jpg);
-    background-size: auto 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-size: 100%;
 }
 .bag-background {
     background-image: url(images/bag.jpg);
-    background-size: auto 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-size: 100%;
 }
 .hand-background {
     background-image: url(images/hand.jpg);
-    background-size: auto 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-size: 100%;
 }
 .tote-background {
     background-image: url(images/tote.jpg);
-    background-size: auto 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 h5{
@@ -286,17 +274,9 @@ b, strong {
 .dropdown:hover .dropdown-menu {
     display: block;
     margin-top: 0;
-}
- 
-@media (min-width: 1360px) {
-
-    .tote-background {
-        background-size: 100% auto;
-    }
-    .hand-background {
-        background-size: 100% auto;
-    }
-}
-.li {
+ }
+.card-title {
     color: white;
+    text-align: center;
+    font-size: 50px;
 }
