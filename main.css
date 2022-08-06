@@ -203,9 +203,6 @@ b, strong {
     font-size: 20px;
     transition: 0.2s ease-in-out;
 }
-.row-2 li:hover {
-    color: #7f9186;
-}
 .feedback {
     width: 94%;
     font-family: "regular";
@@ -313,4 +310,10 @@ h2 {
     font-size: 3vh;
     font-family: "regular";
     letter-spacing: 0.2px;
+}
+footer ul li a {
+    color: white;
+}
+footer ul li a:hover {
+    color: rgb(233, 217, 217);
 }
