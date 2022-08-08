@@ -30,16 +30,6 @@ input[type=text], select, textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  cursor: pointer;
-}
-input[type=submit]:hover {
-  background-color: #45a049;
-}
 /* Style the container/contact section */
 .container {
   border-radius: 5px;
@@ -143,22 +133,21 @@ input[type=submit]:hover {
           <div class="column">
            
             <form action="#">
-              <label for="fname">Your Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Enter Your Name">
-              <label for="lname">Your E-Mail</label>
-              <input type="text" id="lname" name="lastname" placeholder="Enter Your E-Mail Address">
-              <label for="luggages">Reason You Are Reaching Out</label>
-              <select id="luggages" name="luggages">
-                <option value="Every Day Care">Choose one</option>
-                <option value="Every Day Care">Suggestion</option>
-                <option value="Hand Carry">Inquiry</option>
-                <option value="Backpack">Complaint</option>
-              </select>
-              <label for="Message">Message</label>
-              <textarea id="Message" name="Message" placeholder="Write something.." style="height:170px"></textarea>
-              <button class="discover-button">Submit</button>
-            </form>
-         
+                <label for="fname">Your Name</label>
+                <input type="text" id="fname" name="firstname" required pattern="[A-Za-z]{5}" placeholder="Enter Your Name">
+                <label for="lname">Your E-Mail</label>
+                <input type="text" id="lname" name="lastname" required pattern="[A-Za-z]{5}" placeholder="Enter Your E-Mail Address">
+                <label for="luggages" required>Reason You Are Reaching Out</label>
+                <select id="luggages" name="luggages">
+                  <option value="Every Day Care">Choose one</option>
+                  <option value="Every Day Care">Suggestion</option>
+                  <option value="Hand Carry">Inquiry</option>
+                  <option value="Backpack">Complaint</option>
+                </select>
+                <label for="Message">Message</label>
+                <textarea id="Message" name="Message" placeholder="Write something.." required style="height:170px"></textarea>
+                <button class="discover-button">Submit</button>
+              </form>         
           </div>
         </div>
       </div>
