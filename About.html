@@ -6,158 +6,139 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Who We Are</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="main.css"></link>
 <style>
-header{
+  header{
     background-image: url("images/aboutusmain.jpg");
     background-size:cover ;
     height: 70vh;
   }
   body {
     margin: 0;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-.column {
-  float: left;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
-}
-
-.about-section {
-  padding: 50px;
-  text-align: center;
- background-color: grey;
-  color: white;
-}
-
-.container {
-  padding: 0 16px;
-}
-
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.title {
-color: grey;
-}
-
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
-
-
-.button:hover {
-  background-color: #555;
-}
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
   }
-}
+  html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: grey;
+    color: white;
+  }
+  .container {
+    padding: 0 16px;
+  }
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .title {
+    color: grey;
+  }
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  .button:hover {
+    background-color: #555;
+  }
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  .card-text {
+    padding: 15px;
+  }
 </style>
 </head>
 <body>
-  <!-- navbar -->
-  <header>
-  <div class="container-fluid">
-      <nav class="navbar navbar-light justify-content-center navi">
-      <a class="navbar-brand" href="index.html">BRONX LUGGAGE</a>
-      </nav class="navbar-nav">
-      <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                  <ul class="navbar-nav">
-                      <li class="nav-item">
-                          <a class="nav-link" href="index.html">HOME</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">NEW</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          FEATURED BRANDS
-                          </a>
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <h6 class="dropdown-header">LUXURY</h6>
-                              <li><a class="dropdown-item" href="#">Rimowa</a></li>
-                              <li><a class="dropdown-item" href="#">Globe-Trotter</a></li>
-                              <li><a class="dropdown-item" href="#">MontBlanc</a></li>
-                              <li><a class="dropdown-item" href="#">Mulberry</a></li>
-                              <h6 class="dropdown-header">AMENITY</h6>
-                              <li><a class="dropdown-item" href="#">Hartmann</a></li>
-                              <li><a class="dropdown-item" href="#">Open Story</a></li>
-                              <li><a class="dropdown-item" href="#">Thule</a></li>
-                              <li><a class="dropdown-item" href="#">Away</a></li>
-                          </ul>
-                      </li>
-                      <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          LUGGAGE
-                          </a>
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <li><a class="dropdown-item" href="#">Hard-sided </a></li>
-                              <li><a class="dropdown-item" href="#">Soft-sided</a></li>
-                              <li><a class="dropdown-item" href="#">Rolling spinner</a></li>
-                              <li><a class="dropdown-item" href="#">Duffel bags</a></li>
-                          </ul>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">ACCESSORIES</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">EVERYDAY</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="About.html">ABOUT US </a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="contact us.html">CONTACT US</a>
-                      </li>
-                  </ul>
+    <!-- navbar start -->
+    <header>
+      <div class="container-fluid">
+          <nav class="navbar navbar-light justify-content-center navi">
+          <a class="navbar-brand" href="index.html">BRONX LUGGAGE</a>
+          </nav class="navbar-nav">
+          <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                      <ul class="navbar-nav">
+                          <li class="nav-item">
+                              <a class="nav-link" href="catalogue.html">CATALOGUE</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              FEATURED BRANDS
+                              </a>
+                              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <h6 class="dropdown-header">LUXURY</h6>
+                                  <li><a class="dropdown-item" href="rimowa.html">Rimowa</a></li>
+                                  <li><a class="dropdown-item" href="globetrot.html">Globe-Trotter</a></li>
+                                  <li><a class="dropdown-item" href="montblanc.html">MontBlanc</a></li>
+                                  <li><a class="dropdown-item" href="mulberry.html">Mulberry</a></li>
+                                  <h6 class="dropdown-header">AMENITY</h6>
+                                  <li><a class="dropdown-item" href="hartmann.html">Hartmann</a></li>
+                                  <li><a class="dropdown-item" href="openstory.html">Open Story</a></li>
+                                  <li><a class="dropdown-item" href="thule.html">Thule</a></li>
+                                  <li><a class="dropdown-item" href="away.html">Away</a></li>
+                              </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              LUGGAGE
+                              </a>
+                              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <li><a class="dropdown-item" href="suitcase.html">Hard-sided </a></li>
+                                  <li><a class="dropdown-item" href="luggage.html">Soft-sided</a></li>
+                                  <li><a class="dropdown-item" href="tote.html">Tote Bags</a></li>
+                                  <li><a class="dropdown-item" href="duffel.html">Duffel Bags</a></li>
+                              </ul>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="accessories.html">ACCESSORIES</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="everyday.html">EVERYDAY</a>
+                          </li>
+                      </ul>
+                  </div>
               </div>
-          </div>
-      </nav>
-  </div>
-  <div class="icon-container">
-      <img class="dummy-icon" src="images/heart.png">
-      <img class="dummy-icon" src="images/search-interface-symbol.png">
-      <img class="dummy-icon" src="images/shopping-bag.png">
-  </div>
+          </nav>
+      </div>
+      <div class="icon-container">
+          <img class="dummy-icon" src="images/heart.png">
+          <img class="dummy-icon" src="images/search-interface-symbol.png">
+          <img class="dummy-icon" src="images/shopping-bag.png">
+      </div>
   </header>
+  <!-- navbar end -->
 
   <!--Counter-->
   <br>
@@ -186,63 +167,51 @@ color: grey;
   </div><br><br><br><br>
 
   <div class="container">
-    <h2 style="text-align:center">Our Team</h2>
+    <h1 style="text-align:center">Our Team</h2><br>
     <div class="row">
-      <div class="column">
+      <div class="col-sm-6">
         <div class="card">
-          <div class="container">
-            <h2>Laiba Tariq</h2>
-            <p class="title">Marketing CIO</p>
-            <p>Laiba makes sure that Bronx is representing it's core values through the right lens. 
+          <div class="card-body">
+            <h5 class="card-title">Laiba Tariq</h5>
+            <p class="card-text">Laiba makes sure that Bronx is representing it's core values through the right lens. 
               From website designing to product designing, she makes sure things are up and running at all times.</p>
-            <p>lybataryk@gmail.com</p>
           </div>
         </div>
       </div>
-        <div class="column">
-          <div class="card">
-            <div class="container">
-              <h2>Tabassum</h2>
-              <p class="title">Operations CIO</p>
-              <p>Overlooking our operations and making sure that things are always running smoothly at Bronx. 
-                She is known for being our essential wheel. Our top-notch customer service is all thanks to her!</p>
-              <p>lybataryk@gmail.com</p>
-            </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Tabassum Mughal</h5>
+            <p class="card-text">Overlooking our operations and making sure that things are always running smoothly at Bronx. 
+              She is known for being our essential wheel. Our top-notch customer service is all thanks to her!</p>
           </div>
-        </div>
-
-        <div class="row">
-          <div class="column">
-            <div class="card">
-              <div class="container">
-                <h2>Marukh Nawaz</h2>
-                <p class="title">Security Manager</p>
-                <p>Bronx needs the right quality checks to make sure that our products are exactly
-                  what we claim them to be. Here's where Marukh steps in to make sure that quality assurance is our
-                  top priority!
-                </p>
-                <p>lybataryk@gmail.com</p>
-              </div>
-            </div>
-          </div>
-            <div class="column">
-              <div class="card">
-                <div class="container">
-                  <h2>Raviha-ul-Ariqa</h2>
-                  <p class="title">Designer</p>
-                  <p>If you think design, think Raviha. She's our head of designing and always there
-                    with the best of ideas that can be launched by the other team members. In fact, she's the brains 
-                    here at Bronx Luggage!</p>
-                  <p>lybataryk@gmail.com</p>
-                </div>
-              </div>
-            </div>
         </div>
       </div>
-    </div>
+    </div><br><br>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Ravih-ul-Ariqa</h5>
+            <p class="card-text">If you think design, think Raviha. She's our head of designing and always there
+              with the best of ideas that can be launched by the other team members. In fact, she's the brains 
+              here at Bronx Luggage!</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Marukh Nawaz</h5>
+            <p class="card-text">Bronx needs the right quality checks to make sure that our products are exactly
+              what we claim them to be. Here's where Marukh steps in to make sure that quality assurance is our
+              top priority!</p>
+          </div>
+        </div>
+      </div>
+    </div><br><br>
   </div>
-
-  <!--footer-->
+  <!-- footer -->
   <div class="container-fluid justify-content-center p-0 mx-0">
     <footer>
         <div class="row pt-5 justify-content-md-around justify-content-center text-center figure">
@@ -272,41 +241,39 @@ color: grey;
         <div class="col-md-2">
             <ul class="list-unstyled">
                 <li>BRONX LUGGAGE</li>
-                <li> <a href="About.html">Who We Are</a></li>
-                <li><a href="contact us.html">Contact</a></li>
-                <li>Catalogue</li>
+                <li> <a href="about.html">Who We Are</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
             </ul>
         </div>
         <div class="col-md-2">
             <ul class="list-unstyled">
                 <li>PRODUCTS</li>
-                <li>Accessories</li>
-                <li>Luggages</li>
-                <li>Backpacks</li>
-                <li>Purses</li>
-                <li>Essentials</li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="luggage.html">Luggages</a></li>
+                <li><a href="backpack.html">Backpacks</a></li>
+                <li><a href="purse.html">Purses</a></li>
+                <li><a href="everyday.html">Essentials</a></li>
             </ul>
         </div>
         <div class="col-md-2">
             <ul class="list-unstyled">
                 <li>COLLECTION</li>
-                <li>Men</li>
-                <li>Women</li>
-                <li>Heavy Travelers</li>
-                <li>Classic</li>
+                <li><a href="mens.html">Men</a></li>
+                <li><a href="women.html">Women</a></li>
             </ul>
         </div>
         <div class="col-md-2">
             <ul class="list-unstyled">
                 <li>BRANDS</li>
-                <li>Rimowa</li>
-                <li>Globe-trotter</li>
-                <li>Hartmann</li>
-                <li>Away</li>
-                <li>Mulberry</li>
-                <li>Montblack</li>
-                <li>Open Story</li>
-                <li>Thule</li>
+                <li><a href="rimowa.html">Rimowa</a></li>
+                <li><a href="globetrot.html">Globe-trotter</a></li>
+                <li><a href="hartmann.html">Hartmann</a></li>
+                <li><a href="away.html">Away</a></li>
+                <li><a href="mulberry.html">Mulberry</a></li>
+                <li><a href="montblanc.html">Montblanc</a></li>
+                <li><a href="openstory.html">Open Story</a></li>
+                <li><a href="thule.html">Thule</a></li>
             </ul>
         </div>
         <hr class="line">
@@ -354,43 +321,44 @@ color: grey;
                 </div>
             </div>
     </footer>
-    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    var a = 0;
+    $(window).scroll(function() {
 
+      var oTop = $('#counter').offset().top - window.innerHeight;
+      if (a == 0 && $(window).scrollTop() > oTop) {
+        $('.counter-value').each(function() {
+          var $this = $(this),
+            countTo = $this.attr('data-count');
+          $({
+            countNum: $this.text()
+          }).animate({
+              countNum: countTo
+            },
 
-      <script>
-        var a = 0;
-        $(window).scroll(function() {
+            {
 
-          var oTop = $('#counter').offset().top - window.innerHeight;
-          if (a == 0 && $(window).scrollTop() > oTop) {
-            $('.counter-value').each(function() {
-              var $this = $(this),
-                countTo = $this.attr('data-count');
-              $({
-                countNum: $this.text()
-              }).animate({
-                  countNum: countTo
-                },
+              duration: 10000,
+              easing: 'swing',
+              step: function() {
+                $this.text(Math.floor(this.countNum));
+              },
+              complete: function() {
+                $this.text(this.countNum);
+                //alert('finished');
+              }
 
-                {
-
-                  duration: 10000,
-                  easing: 'swing',
-                  step: function() {
-                    $this.text(Math.floor(this.countNum));
-                  },
-                  complete: function() {
-                    $this.text(this.countNum);
-                    //alert('finished');
-                  }
-
-                });
             });
-            a = 1;
-          }
-
         });
-      </script>
-    
+        a = 1;
+      }
+
+    });
+  </script>
+  
 </body>
 </html>
