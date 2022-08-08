@@ -317,3 +317,36 @@ footer ul li a {
 footer ul li a:hover {
     color: rgb(233, 217, 217);
 }
+.product-description {
+    border-bottom: 1px solid #E1E8EE;
+    margin-bottom: 20px;
+  }
+  .product-description span {
+    font-size: 12px;
+    color: grey;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .product-description p {
+    font-size: 16px;
+    font-weight: 300;
+    color: black;
+    line-height: 24px;
+  }
+  .product-price {
+    display: flex;
+    align-items: center;
+  }
+  .product-price span {
+    font-size: 26px;
+    font-weight: 300;
+    color: #43474D;
+    margin-right: 20px;
+  }
+  @media (max-width: 940px) {
+    .prod {
+      flex-direction: column;
+      margin-top: 60px;
+    }
+  }
