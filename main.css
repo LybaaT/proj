@@ -309,3 +309,8 @@ footer ul li a:hover {
         margin-top: 60px;
     }
 }
+@media(max-width: 830px) {
+    .dummy-icon {
+        display: none;
+    }
+}
