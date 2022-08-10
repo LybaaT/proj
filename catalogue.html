@@ -14,17 +14,19 @@
     <link rel="stylesheet" href="main.css"></link>
 
 <style>
-
-
-  .card-group{
+    .card-title {
+        font-size: 60px !important;
+        color: black;
+    }
+    .card-group{
     padding: 0px;
-  }
-  header{
-    background-image: url("images/purse.jpg");
+    }
+    header{
+    background-image: url("images/cataloguemain.jpg");
     background-size:cover;
     height: 70vh;
-  }
-  @media (max-width: 767px) {
+    }
+    @media (max-width: 767px) {
     .carousel-inner .carousel-item > div {
         display: none;
     }
@@ -32,49 +34,44 @@
         display: block;
     }
 }
-
-.card-img {
-    height: 20vh;
-    width: auto;
-}
-.card-body {
-    background-size: cover;
-    background-position: center;
-}
-@media (max-width: 1175px) {
-    .card {
-        min-width: 400px;
+    .card-img {
+        height: 20vh;
+        width: auto;
     }
-}
-
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-    display: flex;
-}
-
-/* medium and up screens */
-@media (min-width: 768px) {
-    
-    .carousel-inner .carousel-item-end.active,
-    .carousel-inner .carousel-item-next {
-      transform: translateX(25%);
+    .card-body {
+        background-size: cover;
+        background-position: center;
     }
-    
-    .carousel-inner .carousel-item-start.active, 
+    @media (max-width: 1175px) {
+        .card {
+            min-width: 400px;
+        }
+    }
+    .carousel-inner .carousel-item.active,
+    .carousel-inner .carousel-item-next,
     .carousel-inner .carousel-item-prev {
-      transform: translateX(-25%);
+        display: flex;
     }
-}
-
-.carousel-inner .carousel-item-end,
-.carousel-inner .carousel-item-start { 
-  transform: translateX(0);
-}
-a p {
-    color: black;
-}
-
+    /* medium and up screens */
+    @media (min-width: 768px) {
+        
+        .carousel-inner .carousel-item-end.active,
+        .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+        }
+        
+        .carousel-inner .carousel-item-start.active, 
+        .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+        }
+    }
+    .carousel-inner .carousel-item-end,
+    .carousel-inner .carousel-item-start { 
+    transform: translateX(0);
+    }
+    a p {
+        color: black;
+    }
 </style>
   
 </head>
@@ -145,112 +142,105 @@ a p {
             <img class="dummy-icon" src="images/search-interface-symbol.png">
             <img class="dummy-icon" src="images/shopping-bag.png">
         </div>
-    </header>
+    </header><br><br>
     <!-- navbar end -->
    
+    <h1 class="tagline">Look through our collections</h1>
   <!-- card catalogue-->
     <div class="card-group">
         <a class="card text-center" href="mens.html">
             <div class="card-body suitcase-background" style="background-image:url(images/mensmain.jpg)">
-                <h5 class="card-title">MEN</h5>
-                <p class="card-text">Lorem Ipsum</p>
+                <h5 class="card-title" >MEN</h5>
                 <div class="container-fluid" style="height:250px; width: 200px;"></div>
             </div>
         </a>
         <a class="card text-center" href="women.html">
             <div class="card-body purse-background" style="background-image:url(images/womenmain.jpg)">
-                <h5 class="card-title">WOMEN</h5>
-                <p class="card-text">Lorem Ipsum</p>
+                <h5 class="card-title" style="color: white;">WOMEN</h5>
                 <div class="container-fluid" style="height:250px;"></div>
             </div>
         </a>
     </div>
+
+    <h1 class="tagline">Our featured luxury brands</h1>
     <div class="card-group">
         <a class="card text-center" href="rimowa.html">
             <div class="card-body suitcase-background" style="background-image:url(images/rimowamain.jpg)">
                 <h5 class="card-title">RIMOWA</h5>
-                <p class="card-text">Lorem Ipsum</p>
                 <div class="container-fluid" style="height:250px; width: 200px;"></div>
             </div>
         </a>
         <a class="card text-center" href="globetrot.html">
             <div class="card-body purse-background" style="background-image:url(images/globetrottermain.jpg)">
                 <h5 class="card-title">GLOBE-TROTTER</h5>
-                <p class="card-text">Lorem Ipsum</p>
                 <div class="container-fluid" style="height:250px;"></div>
             </div>
         </a>
         <a class="card text-center" href="montblanc.html">
             <div class="card-body purse-background" style="background-image:url(images/montblancmain.jpg)">
                 <h5 class="card-title">MONTBLANC</h5>
-                <p class="card-text">Lorem Ipsum</p>
                 <div class="container-fluid" style="height:250px;"></div>
             </div>
         </a>
         <a class="card text-center" href="mulberry.html">
             <div class="card-body purse-background" style="background-image:url(images/mulberrymain.jpg)">
                 <h5 class="card-title">MULBERRY</h5>
-                <p class="card-text">Lorem Ipsum</p>
                 <div class="container-fluid" style="height:250px;"></div>
             </div>
         </a>
     </div>
+
+    <h1 class="tagline">Our featured amenity brands</h1>
     <div class="card-group">
         <a class="card text-center" href="hartmann.html">
             <div class="card-body suitcase-background" style="background-image:url(images/hartmannmain.jpg)">
                 <h5 class="card-title">HARTMANN</h5>
-                <p class="card-text">Lorem Ipsum</p>
                 <div class="container-fluid" style="height:250px; width: 200px;"></div>
             </div>
         </a>
         <a class="card text-center" href="openstory.html">
             <div class="card-body purse-background" style="background-image:url(images/openstorymain.jpg)">
                 <h5 class="card-title">OPEN STORY</h5>
-                <p class="card-text">Lorem Ipsum</p>
                 <div class="container-fluid" style="height:250px;"></div>
             </div>
         </a>
         <a class="card text-center" href="thule.html">
             <div class="card-body purse-background" style="background-image:url(images/thulemain.jpg)">
                 <h5 class="card-title">THULE</h5>
-                <p class="card-text">Lorem Ipsum</p>
                 <div class="container-fluid" style="height:250px;"></div>
             </div>
         </a>
         <a class="card text-center" href="away.html">
             <div class="card-body purse-background" style="background-image:url(images/awaymain.jpg)">
                 <h5 class="card-title">AWAY</h5>
-                <p class="card-text">Lorem Ipsum</p>
                 <div class="container-fluid" style="height:250px;"></div>
             </div>
         </a>
     </div>
+
+    <h1 class="tagline">Search through luggage options</h1>
     <div class="card-group">
         <a class="card text-center" href="suitcase.html">
-            <div class="card-body suitcase-background" style="background-image:url(images/suitcase.jpeg)">
-                <h5 class="card-title">SUITCASES</h5>
-                <p class="card-text">Lorem Ipsum</p>
+            <div class="card-body suitcase-background" style="background-image:url(images/suitcase.jpg)">
+                <h5 class="card-title" style="color: white;">SUITCASES</h5>
                 <div class="container-fluid" style="height:250px; width: 200px;"></div>
             </div>
         </a>
         <a class="card text-center" href="purse.html">
             <div class="card-body purse-background" style="background-image:url(images/purse.jpg)">
                 <h5 class="card-title">PURSES</h5>
-                <p class="card-text">Lorem Ipsum</p>
                 <div class="container-fluid" style="height:250px;"></div>
             </div>
         </a>
         <a class="card text-center" href="tote.html">
             <div class="card-body purse-background" style="background-image:url(images/totemain.jpg)">
                 <h5 class="card-title">TOTE BAGS</h5>
-                <p class="card-text">Lorem Ipsum</p>
                 <div class="container-fluid" style="height:250px;"></div>
             </div>
         </a>
         <a class="card text-center" href="backpack.html">
             <div class="card-body purse-background" style="background-image:url(images/backpack.jpg)">
                 <h5 class="card-title">BACKPACKS</h5>
-                <p class="card-text">Lorem Ipsum</p>
                 <div class="container-fluid" style="height:250px;"></div>
             </div>
         </a>
